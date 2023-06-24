@@ -53,6 +53,38 @@ header {
   font-size: 50px;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.menu div {
+  background-color: rgb(201 140 72);
+  margin: 5px;
+  height: 250px;
+  width: 410px;
+}
+
+.menu div h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu div ul {
+  list-style: none;
+}
+
+.menu div ul li {
+  margin: 10px 5px;
+}
+
+.menu div ul li p {
+  margin-top: 3px;
+}
+
 footer {
   color: white;
   margin-bottom: 10px;
