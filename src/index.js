@@ -1,5 +1,6 @@
 import homepage from "./homepage";
 import menu from "./menu";
+import about from "./about";
 
 homepage();
 
@@ -26,6 +27,16 @@ Menu.addEventListener("click", (e) => {
     currentPage = "menu";
     content.innerHTML = "";
     menu();
+    attachEventListeners();
+  }
+});
+
+About.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (currentPage !== "about") {
+    currentPage = "about";
+    content.innerHTML = "";
+    about();
     attachEventListeners();
   }
 });
@@ -58,12 +69,12 @@ function attachEventListeners() {
 
   About.addEventListener("click", (e) => {
     e.preventDefault();
-    // if (currentPage !== "about") {
-    //   currentPage = "about";
-    //   content.innerHTML = "";
-    //   about();
-    //   attachEventListeners();
-    // }
+    if (currentPage !== "about") {
+      currentPage = "about";
+      content.innerHTML = "";
+      about();
+      attachEventListeners();
+    }
   });
 
   Login.addEventListener("click", (e) => {
