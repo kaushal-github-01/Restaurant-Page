@@ -1,4 +1,4 @@
-function homepage() {
+function menu() {
   const content = document.getElementById("content");
 
   const bodyBgImg = document.createElement("img");
@@ -23,18 +23,11 @@ function homepage() {
     header.appendChild(headerAnchor);
   }
 
-  const mainSection = document.createElement("section");
-  mainSection.setAttribute("class", "homepage");
-  const mainSectionHeading = document.createElement("h1");
-  mainSectionHeading.textContent = "Welcome to The Savory Bistro!";
-  mainSection.appendChild(mainSectionHeading);
-
   const footer = document.createElement("footer");
   footer.textContent = "© The Dream Industries";
 
   content.appendChild(header);
-  content.appendChild(mainSection);
   content.appendChild(footer);
 }
 
-export default homepage;
+export default menu;
